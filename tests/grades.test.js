@@ -19,7 +19,7 @@ describe('Grades', () => {
     })
   })
 
-  describe.skip('calculateAverageByStudent', () => {
+  describe('calculateAverageByStudent', () => {
     it('Extra Credit: returns a list of objects where each object contains the name of a student and their average across all assignments', () => {
       const averages = calculateAverageByStudent(mockGrades)
 
