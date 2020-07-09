@@ -1,12 +1,13 @@
 /* eslint-disable max-len */
-const { describe, it } = require('mocha')
 const { expect } = require('chai')
 const { mockAssignmentAverages, mockStudentAverages, mockGrades } = require('./gradeMocks')
 const { calculateAverageByAssignment, calculateAverageByStudent } = require('../grades')
 
-describe('Grades', () => {
+// { calculateAverageByAssignment, calculateAverageByStudent } 
+
+describe('grades', () => {
   describe('calculateAverageByAssignment', () => {
-    it('returns a list of objects where each object contains the name of an assignment and the classes average for that assignment', () => {
+    it.only('returns a list of objects where each object contains the name of an assignment and the classes average for that assignment', () => {
       const averages = calculateAverageByAssignment(mockGrades)
 
       expect(averages).to.deep.equal(mockAssignmentAverages)
